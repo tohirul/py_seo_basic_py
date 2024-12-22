@@ -1,11 +1,11 @@
 
-# age = int(input("Enter your age: \n"))
+age = int(input("Enter your age: \n"))
 
-# if age >= 18:
-#     print("You are an adult.")
-#     print("You can drive.")
-# else:
-#     print("You are still a child")
+if age >= 18:
+    print("You are an adult.")
+    print("You can drive.")
+else:
+    print("You are still a child")
 
 
 temp_scale = input("Please enter the temperature scale (C/F/K): \n")
@@ -28,3 +28,18 @@ elif temp_scale == 'K':
     print(f"Temperature in Celsius is {temp_c:.2f}")
 else:
     print("Invalid temperature scale")
+
+exam_score = int(input("Enter your exam score: \n"))
+
+if exam_score >= 90:
+    grade = "A"
+elif exam_score >= 80:
+    grade = "B"
+elif exam_score >= 70:
+    grade = "C"
+elif exam_score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+print(f"Your grade is {grade}")
