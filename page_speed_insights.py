@@ -1,7 +1,12 @@
 import requests
+import os
 
 url = "https://www.googleapis.com/pagespeedonline/v5/runPagespeed"
-api_key = 'AIzaSyDo5ie5mIioI4ayomiC6tHZFRVJLv4DaWM'
+#  import from .env file
+api_key = os.getenv("API_KEY")
+print(api_key)
+if api_key is None:
+    raise ValueError("API_KEY environment variable is not set")
 url_to_analyze = input("Enter the URL to analyze: ")
 
 # check if the URL is valid using while loop
